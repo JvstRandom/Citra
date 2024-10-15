@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import imageio.v2 as imageio
 
 # Load the image (replace 'image.jpg' with your image file path)
-image = imageio.imread('pisang/pisang matang/3c680633c8138e2856ede6ce0722a17f.jpg')
+image = imageio.imread('Citra\TugasPisang\pisang\pisang matang\coba.jpg')
 
 # Show original image
 plt.imshow(image)
@@ -21,8 +21,8 @@ def rgb_to_grayscale(image):
     grayscale = 0.299 * r + 0.587 * g + 0.114 * b
     return grayscale
 
-# Perform manual 2D convolution
-def manual_convolution(image, kernel):
+# Perform konvolusi
+def konvolusi(image, kernel):
     # Get dimensions of the image and kernel
     image_height, image_width = image.shape
     kernel_height, kernel_width = kernel.shape
@@ -56,19 +56,19 @@ kernel = np.array([[-1, -1, -1],
                    [-1,  8, -1],
                    [-1, -1, -1]])
 
-# Apply manual convolution
-convolved_image = manual_convolution(grayscale_image, kernel)
+# Apply convolution
+convolved_image = konvolusi(grayscale_image, kernel)
 
 # Show the grayscale image
 plt.subplot(1, 2, 1)
 plt.imshow(grayscale_image, cmap='gray')
-plt.title('Grayscale Image')
+plt.title('Citra asli')
 plt.axis('off')
 
 # Show the convolved image
 plt.subplot(1, 2, 2)
 plt.imshow(convolved_image, cmap='gray')
-plt.title('Convolved Image (Manual)')
+plt.title('Citra Setelah Konvolusi ')
 plt.axis('off')
 
 plt.show()
