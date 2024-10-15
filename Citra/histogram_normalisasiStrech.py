@@ -20,13 +20,13 @@ def hist_plot(img):
 
 # Ambil gambar greyscale
 # img = imageio.imread('pisang/gambar/saturnus.jpeg')
-img = imageio.imread('pisang/pisang matang/images (20).jpg')
+img = imageio.imread('Citra/TugasPisang/pisang/pisang matang/images (20).jpg')
 
 # Cek apakah gambar sudah greyscale, kalau blm di convert
 if img.ndim == 3:
     img = np.dot(img[..., :3], [0.299, 0.587, 0.114])  # Convert to grayscale
 
-# convert ke uint8 jika perlu
+# convert ke uint8(unsigned 8-bit integer) jika perlu
 img = img.astype(np.uint8)
 
 # untuk memastikan jumlah kolom dan baris di citra
