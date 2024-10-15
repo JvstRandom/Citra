@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import imageio.v2 as imageio
 
-# Load the image (replace 'image.jpg' with your image file path)
+# Load the image
 image = imageio.imread('Citra\TugasPisang\pisang\pisang matang\coba.jpg')
 
 # Show original image
@@ -27,10 +27,10 @@ def konvolusi(image, kernel):
     image_height, image_width = image.shape
     kernel_height, kernel_width = kernel.shape
 
-    # Define output image size (same as input image)
+    # Define output image size
     output = np.zeros((image_height, image_width))
 
-    # Calculate padding size (assuming kernel is square and odd-sized)
+    # Calculate padding size
     pad_h = kernel_height // 2
     pad_w = kernel_width // 2
 
@@ -50,7 +50,7 @@ def konvolusi(image, kernel):
 # Convert the image to grayscale
 grayscale_image = rgb_to_grayscale(image)
 
-# Define a convolution kernel (e.g., edge detection Sobel filter)
+# Define a convolution kernel
 # Example kernel for edge detection
 kernel = np.array([[-1, -1, -1],
                    [-1,  8, -1],
@@ -73,6 +73,6 @@ plt.axis('off')
 
 plt.show()
 
-# Display pixel values of the convolved image (optional)
+# Display pixel values of the convolved image
 print("Convolved Image Pixel Values:")
 print(convolved_image)
