@@ -73,6 +73,6 @@ plt.axis('off')
 
 plt.show()
 
-# Display pixel values of the convolved image
+# Display pixel values of the convolved image optional
 print("Convolved Image Pixel Values:")
 print(convolved_image)
