@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import imageio.v2 as imageio
 
 # Load the image
-image = imageio.imread('Citra\TugasPisang\pisang\pisang matang\coba.jpg')
+image = imageio.imread('pisang/pisang matang/coba.jpg')
 
 # Show original image
 plt.imshow(image)

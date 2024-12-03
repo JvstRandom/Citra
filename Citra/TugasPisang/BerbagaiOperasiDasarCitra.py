@@ -13,7 +13,6 @@ image11 = imageio.imread(image_path1)
 image_path2 = 'pisang/pisang matang/images (28).jpg'
 image22 = imageio.imread(image_path2)
 
-# Show original image and its pixel values
 def show_image_with_pixels(image, title):
     print(f"{title} Pixel Values:\n", image)
     plt.imshow(image, cmap='gray' if len(image.shape) == 2 else None)
@@ -21,8 +20,7 @@ def show_image_with_pixels(image, title):
     plt.axis('off')
     plt.show()
 
-
-# Convert image to grayscale
+# Greyscale
 def rgb_to_grayscale(image):
     r = image[:, :, 0]
     g = image[:, :, 1]
@@ -31,19 +29,19 @@ def rgb_to_grayscale(image):
     return grayscale
 
 
-# Make a negative of the image
+# Negative
 def negative_image(image):
     negative = 255 - image
     return negative
 
 
-# Brighten the image
+# Brighten
 def brighten_image(image, factor=1.5):
     brightened = np.clip(image * factor, 0, 255).astype(np.uint8)
     return brightened
 
 
-# Arithmetic operation between two images (average here)
+# Kombinasi
 def combine_images(image1, image2):
     # Ensure both images have the same size and number of channels
     if image1.shape != image2.shape:
@@ -52,7 +50,7 @@ def combine_images(image1, image2):
     return combined
 
 
-# Geometric operation: Translation
+# Translasi
 def translate_image(image, x_shift, y_shift):
     translated_image = np.zeros_like(image)
     rows, cols = image.shape[:2]
@@ -66,7 +64,7 @@ def translate_image(image, x_shift, y_shift):
     return translated_image
 
 
-# Geometric operation: Rotation
+# Rotasi
 def rotate_image(image, angle):
     angle_rad = np.deg2rad(angle)
     rows, cols = image.shape[:2]
@@ -86,7 +84,7 @@ def rotate_image(image, angle):
     return rotated_image
 
 
-# Geometric operation: Flipping
+# Flipping
 def flip_image(image, flip_code):
     if flip_code == 0:  # Vertical flip
         flipped_image = image[::-1, :]
@@ -99,7 +97,7 @@ def flip_image(image, flip_code):
     return flipped_image
 
 
-# Geometric operation: Zooming
+# Zoom
 def zoom_image(image, zoom_factor):
     rows, cols = image.shape[:2]
     center_i, center_j = rows // 2, cols // 2

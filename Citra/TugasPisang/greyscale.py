@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import imageio.v2 as imageio
 
 # Load the image (replace 'image.jpg' with your image file path)
-image = imageio.imread('pisang/pisang matang/3c680633c8138e2856ede6ce0722a17f.jpg')
+image = imageio.imread('pisang/pisang matang/coba.jpg')
 
 # Show original image
 plt.imshow(image)

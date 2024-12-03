@@ -19,8 +19,8 @@ def hist_plot(img):
 
 
 # Ambil gambar greyscale
-# img = imageio.imread('pisang/gambar/saturnus.jpeg')
-img = imageio.imread('Citra/TugasPisang/pisang/pisang matang/images (20).jpg')
+img = imageio.imread('TugasPisang\pisang\gambar\saturnus.jpeg')
+# img = imageio.imread('TugasPisang/pisang/pisang matang/images (20).jpg')
 
 # Cek apakah gambar sudah greyscale, kalau blm di convert
 if img.ndim == 3:
