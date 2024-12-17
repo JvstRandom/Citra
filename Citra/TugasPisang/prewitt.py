@@ -25,7 +25,7 @@ def prewitt_edge_detection(image):
     return edge
 
 # Load gambar input
-image_path = 'Citra/TugasPisang/pisang/pisang matang/images (20).jpg'
+image_path = 'pisang/pisang matang/images (20).jpg'
 image = cv2.imread(image_path)
 
 if image is None:

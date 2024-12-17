@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Path ke gambar input
-image_path = 'Citra/TugasPisang/pisang/pisang matang/images (20).jpg'
+image_path = 'pisang/pisang matang/images (20).jpg'
 img = imageio.imread(image_path)
 
 # Konversi ke grayscale jika gambar dalam format RGB

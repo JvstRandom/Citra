@@ -87,7 +87,7 @@ def get_optimal_threshold():
     return optimal_threshold[0]
 
 # Memuat gambar dan mengubahnya menjadi grayscale
-image = Image.open('Citra/TugasPisang/pisang/pisang matang/coba.jpg').convert("L")
+image = Image.open('pisang/pisang matang/coba.jpg').convert("L")
 img = np.asarray(image)
 
 # Menghitung histogram

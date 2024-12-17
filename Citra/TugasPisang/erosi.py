@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Membaca citra
-img = imageio.imread('Citra/TugasPisang/pisang/pisang matang/images (20).jpg')
+img = imageio.imread('pisang/pisang matang/images (20).jpg')
 
 # Mengonversi citra ke grayscale
 gray_img = np.dot(img[...,:3], [0.2989, 0.5870, 0.1140])  # Menggunakan rumus RGB ke grayscale

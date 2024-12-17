@@ -32,7 +32,7 @@ def sobel_edge_detection(image):
     return edge_sobel
 
 # Membaca gambar
-image_path = "Citra/TugasPisang/pisang/pisang matang/coba.jpg"  # Ganti dengan path gambar Anda
+image_path = "pisang/pisang matang/coba.jpg"  # Ganti dengan path gambar Anda
 image = imageio.imread(image_path)
 
 if image is None:

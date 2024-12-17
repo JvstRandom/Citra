@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Membaca gambar
-image = cv2.imread("Citra/TugasPisang/pisang/pisang matang/images (20).jpg", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("pisang/pisang matang/images (20).jpg", cv2.IMREAD_GRAYSCALE)
 
 # Cek apakah gambar berhasil dimuat
 if image is None:

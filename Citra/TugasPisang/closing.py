@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Membaca gambar
-image = cv2.imread('Citra/TugasPisang/pisang/pisang matang/images (20).jpg', 0)  # 0 untuk membaca citra dalam grayscale
+image = cv2.imread('pisang/pisang matang/images (20).jpg', 0)  # 0 untuk membaca citra dalam grayscale
 
 # Binarisasi citra
 _, binary_image = cv2.threshold(image, 127, 255, cv2.THRESH_BINARY)
