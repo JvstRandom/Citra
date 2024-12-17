@@ -12,8 +12,8 @@ if img.ndim == 3:
 # Convert to uint8 if necessary
 img = img.astype(np.uint8)
 
-# Define thresholds (example: 3 levels)
-thresholds = [64, 128, 192]  # Adjust these values for your specific use case
+# Define thresholds
+thresholds = [64, 128, 192]
 
 # Apply multilevel thresholding
 output_image = np.zeros_like(img)
